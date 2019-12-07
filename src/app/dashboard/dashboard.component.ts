@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import * as Chartist from 'chartist';
 import { ChartDataSets, ChartOptions } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
-import { MultiDataSet, Label } from 'ng2-charts';
-import { ChartType, ChartOptions } from 'chart.js';
-import { SingleDataSet, Label, monkeyPatchChartJsLegend, monkeyPatchChartJsTooltip } from 'ng2-charts';
+import { MultiDataSet } from 'ng2-charts';
+import { ChartType} from 'chart.js';
+import { SingleDataSet, monkeyPatchChartJsLegend, monkeyPatchChartJsTooltip } from 'ng2-charts';
 
 @Component({
   selector: 'app-dashboard',
