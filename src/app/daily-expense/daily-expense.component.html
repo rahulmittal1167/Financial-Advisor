@@ -1,0 +1,116 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger">
+                      <h4 class="card-title ">Budget</h4>
+                      <p class="card-category">Fix your Budget here</p>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-group">
+                        <label for="college">Categories:</label>
+                        <select class="form-control" id="goal" [(ngModel)]="selectedValue2" name="goal_name" required>
+                          <option value="Vehicle">Food and Drinks</option>
+                          <option value="Shopping">Shopping</option>
+                          <option value="Housing">Housing</option>
+                          <option value="Transportation">Transportation</option>
+                          <option value="Vehicle">Vehicle</option>
+                          <option value="Life">Life and Entertainment</option>
+                          <option value="PC">Communication, PC</option>
+                          <option value="FE">Financial Expenses</option>
+                          <option value="Invest">Investments</option>
+                          <option value="Income">Income</option>
+                          <option value="Others">Others</option>
+                        </select>
+                   </div>
+                   <form class="container"  [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+                   <div class="form-group" *ngIf="selectedValue2 == 'Vehicle'">
+                    <label for="name">Monthly Budget:</label>
+                    <input type="text" class="form-control" id="name" formControlName="name" ngModel name="budget_name" required>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+                      
+                </div>
+              </div>
+              
+          </div>
+         
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header card-header-danger">
+                    <h4 class="card-title ">Expense</h4>
+                    <p class="card-category">Enter your expense here:</p>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                      <label for="college">Categories:</label>
+                      <select class="form-control" id="category" [(ngModel)]="selectedValue" name="category_name" required>
+                        <option value="Food">Food and Drinks</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="Housing">Housing</option>
+                        <option value="Transportation">Transportation</option>
+                        <option value="Vehicle">Vehicle</option>
+                        <option value="Life">Life and Entertainment</option>
+                        <option value="PC">Communication, PC</option>
+                        <option value="FE">Financial Expenses</option>
+                        <option value="Invest">Investments</option>
+                        <option value="Income">Income</option>
+                        <option value="Others">Others</option>
+                      </select>
+                 </div>
+                 <div class="form-group">
+                  <label for="college"> Sub Categories:</label>
+                  <select class="form-control"  *ngIf="selectedValue == 'Food'" id="goal" [(ngModel)]="selectedValue11" name="subcategory_name" required>
+                    <option value="F1">General-Food and Drinks</option>
+                    <option value="F2">Bar, Cafe</option>
+                    <option value="F3">Groceries</option>
+                    <option value="F4">Restaurant, fast-food</option>
+            
+                  
+                  </select>
+
+                  <select class="form-control"  *ngIf="selectedValue == 'Shopping'" id="goal" [(ngModel)]="selectedValue12" name="subcategory_name" required>
+                    <option value="S1">General- Shopping</option>
+                    <option value="S2">Clothes & Shoes</option>
+                    <option value="S3">Drug store, Chemist</option>
+                    <option value="S4">Electronic, accessories</option>
+                    <option value="S2">Gifts, joy</option>
+                    <option value="S3">Health and beauty</option>
+                    <option value="S4">Jewellry</option>
+                    <option value="S4">Kids</option>
+            
+                  
+                  </select>
+                  <select class="form-control"  *ngIf="selectedValue == 'Housing'" id="goal" [(ngModel)]="selectedValue13" name="subcategory_name" required>
+                    <option value="H1">Maintenance, repairs</option>
+                    <option value="H2">Property Insurance</option>
+                    <option value="H3">Rent</option>
+                    <option value="H4">Energy, Utilities</option>
+            
+                  
+                  </select>
+             </div>
+                 <form class="container"  [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+                 <div class="form-group" *ngIf="selectedValue11 == 'F1' && selectedValue=='Food'">
+                  <label for="name">Enter date</label>
+                  <input type="date" class="form-control" id="dt" formControlName="name"   required>
+                  <label for="name">Enter Amount</label>
+                  <input type="Amount" class="form-control" id="amt" formControlName="name"  required>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+                    
+              </div>
+            </div>
+            
+        </div>
+       
+    </div>
+  </div>
+</div>

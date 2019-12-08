@@ -7,8 +7,9 @@ import { AdminLayoutRoutes } from './admin-layout.routing';
 import { DashboardComponent } from '../../dashboard/dashboard.component';
 import { UserProfileComponent } from '../../user-profile/user-profile.component';
 import { TableListComponent } from '../../table-list/table-list.component';
-import { TypographyComponent } from '../../typography/typography.component';
+import { DailyExpenseComponent } from '../../daily-expense/daily-expense.component';
  import { GoalsComponent } from '../../goals/goals.component';
+ import { GoaldetailsComponent } from '../../goals/goaldetails/goaldetails.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 // import { MapsComponent } from '../../maps/maps.component';
 // import { UpgradeComponent } from '../../upgrade/upgrade.component';
@@ -21,6 +22,7 @@ import {
   MatTooltipModule,
   MatSelectModule
 } from '@angular/material';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -39,8 +41,9 @@ import {
     DashboardComponent,
     UserProfileComponent,
     TableListComponent,
-    TypographyComponent,
+    DailyExpenseComponent,
      GoalsComponent,
+     GoaldetailsComponent,
    // MapsComponent,
     NotificationsComponent,
     // UpgradeComponent,

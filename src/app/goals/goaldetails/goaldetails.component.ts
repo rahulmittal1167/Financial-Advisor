@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GoaldetailsComponent implements OnInit {
 
+  selectedValue : string ='';
+
   constructor() { }
 
+  
   ngOnInit() {
   }
 
