@@ -15,19 +15,78 @@
                               <option value="House">New House</option>
                               <option value="Party">Party</option>
                               <option value="Healthcare">Healthcare</option>
-                              <option value="Holidas">Holidays</option>
+                              <option value="Holidays">Holidays</option>
                               <option value="Education">Education</option>
                             </select>
                        </div>
                           
-                    </div>
+                    
                     <div class="form-group" *ngIf="selectedValue == 'Vehicle'">
-                        <label for="name">Enter College Name:</label>
+                        <label for="name">Enter Vehicle Name:</label>
                         <input type="text" class="form-control" id="name" ngModel name="other_college_name" required>
-                      
+                         <label for="name">Enter Vehicle Type:</label>
+                        <input type="text" class="form-control" id="name" ngModel name="other_college_name" required>
+                        <label for="name">Enter Vehicle Price:</label>
+                        <input type="text" class="form-control" id="name" ngModel name="other_college_name" required>
+                        <label for="name">Enter Planned Date Of Buying:</label>
+                        <input type="date" class="form-control" id="name" ngModel name="other_college_name" required>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                       </div>
+                      <div class="form-group" *ngIf="selectedValue == 'House'">
+                        <label for="name">Enter House Name:</label>
+                        <input type="text" class="form-control" id="name" ngModel name="other_college_name" required>
+                         <label for="name">Enter House Location:</label>
+                        <input type="text" class="form-control" id="name" ngModel name="other_college_name" required>
+                        <label for="name">Enter House Area:</label>
+                        <input type="text" class="form-control" id="name" ngModel name="other_college_name" required>
+                        <label for="name">Enter Planned Date Of Buying:</label>
+                        <input type="date" class="form-control" id="name" ngModel name="other_college_name" required>
+                        <label for="name">Enter House Price:</label>
+                        <input type="text" class="form-control" id="name" ngModel name="other_college_name" required>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div> 
+                      <div class="form-group" *ngIf="selectedValue == 'Party'">
+                          <label for="name">Enter Party Name:</label>
+                          <input type="text" class="form-control" id="name" ngModel name="other_college_name" required>
+                           <label for="name">Enter Party Location:</label>
+                          <input type="text" class="form-control" id="name" ngModel name="other_college_name" required>
+                           <label for="name">Enter Party Date:</label>
+                          <input type="date" class="form-control" id="name" ngModel name="other_college_name" required>
+                          <label for="name">Enter Expected Price:</label>
+                          <input type="text" class="form-control" id="name" ngModel name="other_college_name" required>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </div> 
+                        <div class="form-group" *ngIf="selectedValue == 'Healthcare'">
+                            <label for="name">Enter Member Name:</label>
+                            <input type="text" class="form-control" id="name" ngModel name="other_college_name" required>
+                            <label for="name">Date:</label>
+                            <input type="date" class="form-control" id="name" ngModel name="other_college_name" required>
+                             <label for="name">Expected Price:</label>
+                            <input type="text" class="form-control" id="name" ngModel name="other_college_name" required>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                          <div class="form-group" *ngIf="selectedValue == 'Holidays'">
+                              <label for="name">Enter Holidays Name:</label>
+                              <input type="text" class="form-control" id="name" ngModel name="other_college_name" required>
+                              <label for="name">Enter Date:</label>
+                              <input type="date" class="form-control" id="name" ngModel name="other_college_name" required>
+                               <label for="name">Expected Expense:</label>
+                              <input type="text" class="form-control" id="name" ngModel name="other_college_name" required>
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                            <div class="form-group" *ngIf="selectedValue == 'Education'">
+                                <label for="name">For Whom?:</label>
+                                <input type="text" class="form-control" id="name" ngModel name="other_college_name" required>
+                                <label for="name">Education Type:</label>
+                                <input type="text" class="form-control" id="name" ngModel name="other_college_name" required>
+                                <label for="name">Enter Date:</label>
+                                <input type="date" class="form-control" id="name" ngModel name="other_college_name" required>
+                                 <label for="name">Expected Expense:</label>
+                                <input type="text" class="form-control" id="name" ngModel name="other_college_name" required>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                              </div>
                 </div>
-               
+              </div>
           
                 
             </div>
@@ -35,6 +94,3 @@
         </div>
     </div>
   </div>
-  
-
-  
