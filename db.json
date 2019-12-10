@@ -1,0 +1,113 @@
+{
+  "users": [
+    {
+      "name": "rahul",
+      "lname": "mittal",
+      "id": 768979,
+      "fname": "bdm",
+      "dob": "12/12/12",
+      "role": "employee",
+      "mo": 1234567894,
+      "email": "abc@gmail.com",
+      "pwd": "qwe12",
+      "city": "sgnr",
+      "state": "raj",
+      "zip": 335001
+    },
+    {
+      "id": 768986
+    },
+    {
+      "id": 768987
+    },
+    {
+      "id": 768988
+    },
+    {
+      "name": "dsdf",
+      "lname": "dfffg",
+      "fname": "bdm",
+      "dob": "1cvb",
+      "role": "empccv",
+      "mo": 1234567894,
+      "email": "abc@gdbbdfbbmail.com",
+      "pwd": "qwedfb12",
+      "city": "sgfbnr",
+      "state": "raj",
+      "zip": 335001,
+      "id": 768989
+    },
+    {
+      "name": "dsdzdfvdfvf",
+      "lname": "dfdfvdfvffg",
+      "fname": "bddfvdfvm",
+      "id": 768990
+    },
+    {
+      "id": 768991
+    },
+    {
+      "id": 768992
+    },
+    {
+      "fname": "rghyrrrrrrr",
+      "email": "rtrtrtrtrtrtrt",
+      "id": 768993
+    },
+    {
+      "id": 768994
+    },
+    {
+      "id": 768995
+    },
+    {
+      "id": 768996
+    },
+    {
+      "id": 768997
+    },
+    {
+      "name": "mitf",
+      "lname": "dfffg",
+      "fname": "bdm",
+      "dob": "1cvb",
+      "role": "empccv",
+      "mo": 1234567894,
+      "email": "abc@gdbbdfbbmail.com",
+      "id": 768998
+    },
+    {
+      "id": 768999
+    },
+    {
+      "fname": "amit",
+      "email": "kumar",
+      "id": 769000
+    },
+    {
+      "id": 769001
+    },
+    {
+      "id": 769002
+    },
+    {
+      "fname": "ereterte",
+      "email": "rtry",
+      "id": 769003
+    },
+    {
+      "id": 769004
+    },
+    {
+      "fname": "sdfsdsd",
+      "email": "sdgdsdg",
+      "id": 769005
+    },
+    {
+      "id": 769006
+    },
+    {
+      "id": 769007
+    }
+  ]
+}

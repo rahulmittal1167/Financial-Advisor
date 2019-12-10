@@ -1,0 +1,42 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Budget</h4>
+                        <p class="card-category">Fix your Budget here</p>
+                    </div>
+                    <div class="card-body">
+                      <div class="form-group">
+                          <label for="college">Categories:</label>
+                          <select class="form-control" id="goal" [(ngModel)]="selectedValue2" name="goal_name" required>
+                            <option value="Vehicle">Food and Drinks</option>
+                            <option value="Shopping">Shopping</option>
+                            <option value="Housing">Housing</option>
+                            <option value="Transportation">Transportation</option>
+                            <option value="Vehicle">Vehicle</option>
+                            <option value="Life">Life and Entertainment</option>
+                            <option value="PC">Communication, PC</option>
+                            <option value="FE">Financial Expenses</option>
+                            <option value="Invest">Investments</option>
+                            <option value="Income">Income</option>
+                            <option value="Others">Others</option>
+                          </select>
+                     </div>
+                     <form class="container"  [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+                     <div class="form-group" *ngIf="selectedValue2 == 'Vehicle'">
+                      <label for="name">Monthly Budget:</label>
+                      <input type="text" class="form-control" id="name" formControlName="name" ngModel name="budget_name" required>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </form>
+                        
+                  </div>
+                </div>
+                
+            </div>
+           
+        </div>
+      </div>
+  </div>

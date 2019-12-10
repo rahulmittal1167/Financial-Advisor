@@ -8,25 +8,49 @@
                       <p class="card-category">Complete your profile</p>
                   </div>
                   <div class="card-body">
-                      <form>
+                      <form class="container"  [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+                          <h5>
+                         <!--  <div class="form-row">
+                          
+                                <label for="validationDefault02">UserId</label>
+                                <input type="number" class="form-control" formControlName="id" id="validationDefault02" placeholder="User Id"  required>
+                              </div>
+                           -->
+                          <div class="form-row">
+                              <div class="col-md-6 mb-3">
+                                <label for="validationDefault06">First Name</label>
+                                <input type="text" class="form-control"  formControlName="fname" id="validationDefault06" placeholder="Father name" required>
+                              </div>
+                              
+                            </div>
+                          
+                              <div class="form-row">
+                                  <div class="col-md-6 mb-3">
+                                    <label for="validationDefault06">Email</label>
+                                    <input type="email" class="form-control"  formControlName="email" id="validationDefault06" placeholder="Enter your mail"  required>
+                                  </div>
+                              
+                                </div>
+                          
+                          <button type="submit" class="btn  btn-block" style="background-color:rgb(15, 156, 199)" ><Strong>Submit</Strong></button>
+                        </h5>
+                        </form>
+                      <!-- <form class="container"  [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
                           <div class="row">
-                              <!-- <div class="col-md-5">
-                                <mat-form-field class="example-full-width">
-                                    <input matInput placeholder="Company (disabled)" disabled>
-                                  </mat-form-field>
-                              </div> -->
                               <div class="col-md-6">
-                                  <mat-form-field class="example-full-width">
+                                   <mat-form-field class="example-full-width">
                                     <input matInput placeholder="Username">
-                                  </mat-form-field>
+                                  </mat-form-field> 
+                                  <input type="text" class="form-control" formControlName="Uname" id="validationDefault01" placeholder="Username"  required>
                               </div>
                               <div class="col-md-6">
-                                  <mat-form-field class="example-full-width">
+                                   <mat-form-field class="example-full-width">
                                     <input matInput placeholder="Email address" type="email">
-                                  </mat-form-field>
+                                  </mat-form-field> 
+                                  <input type="text" class="form-control" formControlName="email" id="validationDefault01" placeholder="Email"  required>
                               </div>
                           </div>
-                          <div class="row">
+                           <div class="row">
                               <div class="col-md-6">
                                 <mat-form-field class="example-full-width">
                                   <input matInput placeholder="First Name" type="text">
@@ -64,22 +88,16 @@
                           </div>
                           <div class="row">
                               <div class="col-md-12">
-                                <!-- <label>About Me</label> -->
                                 <mat-form-field class="example-full-width">
                                    <textarea matInput placeholder="About Me"></textarea>
                                  </mat-form-field>
-                                  <!-- <div class="form-group">
-
-                                      <div class="form-group">
-                                          <label class="bmd-label-floating"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
-                                          <textarea class="form-control" rows="5"></textarea>
-                                      </div>
-                                  </div> -->
+                                 
                               </div>
                           </div>
                           <button mat-raised-button type="submit" class="btn btn-danger pull-right">Update Profile</button>
-                          <div class="clearfix"></div>
-                      </form>
+                          <div class="clearfix"></div> 
+                          <button type="submit" class="btn  btn-block" style="background-color:rgb(15, 156, 199)" ><Strong>Submit</Strong></button>
+                      </form> -->
                   </div>
               </div>
           </div>
@@ -111,11 +129,7 @@
               <div class="card-body">
                   <form>
                       <div class="row">
-                          <!-- <div class="col-md-5">
-                            <mat-form-field class="example-full-width">
-                                <input matInput placeholder="Company (disabled)" disabled>
-                              </mat-form-field>
-                          </div> -->
+                       
                           <div class="col-md-6">
                               <mat-form-field class="example-full-width">
                                 <input matInput placeholder="Bank Name">
@@ -133,11 +147,7 @@
                               <input matInput placeholder="IFSC Code" type="text">
                             </mat-form-field>
                           </div>
-                          <!-- <div class="col-md-6">
-                            <mat-form-field class="example-full-width">
-                              <input matInput placeholder="Last Name" type="text">
-                            </mat-form-field>
-                          </div> -->
+                       
                       </div>
                       <div class="row">
                           <div class="col-md-12">
@@ -152,16 +162,7 @@
                               <input matInput placeholder="Bank Balance" type="text">
                             </mat-form-field>
                           </div>
-                          <!-- <div class="col-md-4">
-                            <mat-form-field class="example-full-width">
-                              <input matInput placeholder="Country" type="text">
-                            </mat-form-field>
-                          </div> -->
-                          <!-- <div class="col-md-4">
-                            <mat-form-field class="example-full-width">
-                              <input matInput placeholder="Postal Code" type="text">
-                            </mat-form-field>
-                          </div> -->
+                         
                       </div>
                       <div class="row">
                           <div class="col-md-6">
@@ -169,13 +170,7 @@
                             <mat-form-field class="example-full-width">
                                <input matInput placeholder="FD Amount" type="text">
                              </mat-form-field>
-                              <!-- <div class="form-group">
-  
-                                  <div class="form-group">
-                                      <label class="bmd-label-floating"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
-                                      <textarea class="form-control" rows="5"></textarea>
-                                  </div>
-                              </div> -->
+                              
                           </div>
                           <div class="col-md-6">
                             <label>Any RD's</label>
@@ -200,16 +195,7 @@
               <div class="card-body">
                   <form>
                       <div class="row">
-                          <!-- <div class="col-md-5">
-                            <mat-form-field class="example-full-width">
-                                <input matInput placeholder="Company (disabled)" disabled>
-                              </mat-form-field>
-                          </div> -->
-                          <!-- <div class="col-md-6">
-                              <mat-form-field class="example-full-width">
-                                <input matInput placeholder="Bank Name">
-                              </mat-form-field>
-                          </div> -->
+                        
                           <div class="col-md-6">
                           <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -235,11 +221,7 @@
                             </mat-form-field>
                           </div>
                         </div>
-                          <!-- <div class="col-md-6">
-                            <mat-form-field class="example-full-width">
-                              <input matInput placeholder="Last Name" type="text">
-                            </mat-form-field>
-                          </div> -->
+                          
                       <div class="row">
                           <div class="col-md-6">
                             <mat-form-field class="example-full-width">
@@ -247,16 +229,7 @@
                             </mat-form-field>
                           </div>
                         </div>
-                          <!-- <div class="col-md-4">
-                            <mat-form-field class="example-full-width">
-                              <input matInput placeholder="Country" type="text">
-                            </mat-form-field>
-                          </div> -->
-                          <!-- <div class="col-md-4">
-                            <mat-form-field class="example-full-width">
-                              <input matInput placeholder="Postal Code" type="text">
-                            </mat-form-field>
-                          </div> -->
+                         
                       <button mat-raised-button type="submit" class="btn btn-danger pull-right">Save Details</button>
                       <div class="clearfix"></div>
                   </form>

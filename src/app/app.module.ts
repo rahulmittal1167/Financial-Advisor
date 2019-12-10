@@ -13,7 +13,6 @@ import { AppComponent } from './app.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { TableListComponent } from './table-list/table-list.component';
 //import { TypographyComponent } from './typography/typography.component';
 // import { IconsComponent } from './icons/icons.component';
 import { NotificationsComponent } from './notifications/notifications.component';
@@ -27,6 +26,10 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { GoalsComponent } from './goals/goals.component';
 import { GoaldetailsComponent } from './goals/goaldetails/goaldetails.component';
 import { DailyExpenseComponent } from './daily-expense/daily-expense.component';
+// import { LoginComponent } from './login/login.component';
+import { DebtComponent } from './debt/debt.component';
+import { DebtdetailComponent } from './debt/debtdetail/debtdetail.component';
+import { RestService } from './rest.service';
 
 @NgModule({
   imports: [
@@ -45,12 +48,9 @@ import { DailyExpenseComponent } from './daily-expense/daily-expense.component';
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    
-    
-  
 
   ],
-  providers: [],
+  providers: [RestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

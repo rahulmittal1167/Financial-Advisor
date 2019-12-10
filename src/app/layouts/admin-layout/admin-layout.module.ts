@@ -6,11 +6,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminLayoutRoutes } from './admin-layout.routing';
 import { DashboardComponent } from '../../dashboard/dashboard.component';
 import { UserProfileComponent } from '../../user-profile/user-profile.component';
-import { TableListComponent } from '../../table-list/table-list.component';
+import { DebtComponent } from '../../debt/debt.component';
 import { DailyExpenseComponent } from '../../daily-expense/daily-expense.component';
  import { GoalsComponent } from '../../goals/goals.component';
  import { GoaldetailsComponent } from '../../goals/goaldetails/goaldetails.component';
+ import { DebtdetailComponent } from '../../debt/debtdetail/debtdetail.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
+import { LoginComponent } from '../../login/login.component';
 // import { MapsComponent } from '../../maps/maps.component';
 // import { UpgradeComponent } from '../../upgrade/upgrade.component';
 
@@ -22,6 +24,7 @@ import {
   MatTooltipModule,
   MatSelectModule
 } from '@angular/material';
+
 
 @NgModule({
   imports: [
@@ -38,12 +41,14 @@ import {
     MatTooltipModule,
   ],
   declarations: [
+    LoginComponent,
     DashboardComponent,
     UserProfileComponent,
-    TableListComponent,
+    DebtComponent,
     DailyExpenseComponent,
      GoalsComponent,
      GoaldetailsComponent,
+     DebtdetailComponent,
    // MapsComponent,
     NotificationsComponent,
     // UpgradeComponent,
